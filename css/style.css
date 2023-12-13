@@ -1,0 +1,164 @@
+body, html{
+    height: 100%;
+    margin: 0;
+}
+header{
+    background-color: #f42d59;
+    font-family: Ephesis;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header>h2{
+    font-size: 2.5em;
+}
+header>div:first-of-type{
+    width: 65px;
+    height: 65px;
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+}
+header>div>div:nth-child(1){
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background-color: #f42d59;
+    border-radius: 50%;
+    top:10px;
+    left: 10px;
+}
+header>div>div:nth-child(2){
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    top:20px;
+    left: 20px;
+}
+header>div>div:nth-child(3){
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #f42d59;
+    border-radius: 50%;
+    top:27px;
+    left: 27px;
+}
+main{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: gainsboro;
+    color: black;
+    font-family: Heebo, Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+main article{
+    box-sizing: border-box;
+    width: 200px;
+    height: 370px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+main article h2{
+    text-align: center;
+}
+main article img{
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+}
+main form input:last-of-type:hover{
+    background-color: #D9D9D9;
+    color: #f42d59;
+}
+main>img{
+    width: 100%;
+}
+main form{
+    background-color: white;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+form p:first-of-type{
+    text-align: center;
+    font-size: larger;
+}
+form p{
+    font-weight: 600;
+}
+
+
+#age{
+    width: 3em;
+}
+
+form input:last-of-type{
+    background-color: #f42d59;
+    color: white;
+    border: none;
+    padding-top:5px;
+    padding-bottom:5px;
+
+}
+footer{
+    background-color: #f42d59;
+    color: white;
+    text-align: center;   
+    font-family: Heebo, Arial, sans-serif; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer ul{
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    justify-content: center;
+}
+footer ul li img{
+    width: 50px;
+    border-radius: 50%;
+}
+footer p>a{
+    color: white;
+    text-decoration: none;
+}
+
+footer p>a:hover{
+    color: gainsboro;
+}
+
+@media only screen and (max-width:769px) {
+    form{
+        width: 285px;
+        box-sizing: border-box;
+    }
+    form input:last-of-type{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+ 
+
+}
+@media only screen and (min-width:770px) {
+    form{
+        width: 380px;
+        box-sizing: border-box;
+    }
+    form input:last-of-type{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}
